@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>edit</title>
+</head>
+
+<body>
+
+    <div class=" w-full min-h-screen bg-zinc-900 p-10 text-white ">
+        <div class="">
+            <a class="text-blue-500 inline-block mt-8 text-3xl" href="/"><i class="fa-solid fa-arrow-left"></i></a>
+            <div class="form px-10 py-10 text-white flex justify-center items-center">
+                <form action="/edit" method="post">
+                    <input class="block w-full px-5 py-1 bg-zinc-800 rounded-lg" type="text" value="<%= filename %> " 
+                        required name="previous">
+                    <input class="block w-full px-5 py-1 bg-zinc-800 rounded-lg mt-5" type="text"
+                        placeholder="New Titile" required name="new">
+                        <div class="flex justify-center">
+                    <input class="mt-4  text-white bg-yellow-500 
+                rounded-md px-2 py-1 " type="submit" value="Update Task">
+                </div>
+                </form>
+            </div>
+        </div>
+
+</body>
+
+</html>
